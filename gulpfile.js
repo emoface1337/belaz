@@ -1,12 +1,13 @@
 "use strict"
 
-// Load plugins
 const autoprefixer = require("gulp-autoprefixer")
 const gulp = require("gulp")
 const rename = require("gulp-rename")
 const sass = require('gulp-sass')
 const uglify = require('gulp-uglify')
 const browserSync = require('browser-sync')
+const cssnano = require('cssnano')
+const postcss = require('gulp-postcss')
 
 const paths = {
     html: ['index.html'],
@@ -18,11 +19,12 @@ const css = () => {
     return gulp
         .src(paths.sass)
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest("./css/"))
-        .pipe(rename({suffix: ".min"}))
         .pipe(autoprefixer())
         .pipe(gulp.dest("./css/"))
-        .pipe(browsersync.stream())
+        .pipe(rename({suffix: ".min"}))
+        .pipe(postcss([cssnano()]))
+        .pipe(gulp.dest("./css/"))
+        .pipe(browserSync.stream())
 }
 
 const scripts = () => {
