@@ -208,6 +208,28 @@ h6 {
       .warranty-item__link a:hover {
         color: #f7b516; }
 
+.bonus {
+  color: #ffffff;
+  padding: 100px 0;
+  background-color: #08243e; }
+  .bonus .section__title {
+    margin-bottom: 100px; }
+
+.bonus-item {
+  text-align: center; }
+  .bonus-item__icon {
+    font-size: 30px;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-bottom: 40px; }
+  .bonus-item__text {
+    font-size: 18px; }
+
 body {
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif; }
