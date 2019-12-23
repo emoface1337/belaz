@@ -77,12 +77,14 @@
                 <form action="" class="price-form">
                     <div class="form-group d-flex justify-content-end">
                         <div class="form-group__block">
-                            <img src="img/price/price-form__envelope.png" alt="envelope">
-                            <input type="email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
+                            <img src="img/price/price-form__envelope.png" alt="Почта">
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
                         </div>
                         <div class="form-group__block">
-                            <img src="img/price/price-form__phone.png" alt="phone">
-                            <input type="text" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
+                            <img src="img/price/price-form__phone.png" alt="Телефон">
+                            <label for="phone"></label>
+                            <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
                         </div>
                     </div>
                     <div class="form-group d-flex justify-content-end align-items-center">
@@ -113,28 +115,28 @@
         <div class="row">
             <div class="col-xl-3">
                 <div class="advantages-item d-flex flex-column align-items-center">
-                    <div class="advantages-item__image"><img src="img/advantages/engine.png" alt=""></div>
+                    <div class="advantages-item__image"><img src="img/advantages/engine.png" alt="Двигатель"></div>
                     <div class="advantages-item__text">Любые типы деталей<br> от шайбы до двигателя!
                     </div>
                 </div>
             </div>
             <div class="col-xl-3">
                 <div class="advantages-item d-flex flex-column align-items-center">
-                    <div class="advantages-item__image"><img src="img/advantages/dump-truck.png" alt=""></div>
+                    <div class="advantages-item__image"><img src="img/advantages/dump-truck.png" alt="Грузовик"></div>
                     <div class="advantages-item__text">Все модификации Белаз<br> от 45т до 450 т
                     </div>
                 </div>
             </div>
             <div class="col-xl-3">
                 <div class="advantages-item d-flex flex-column align-items-center">
-                    <div class="advantages-item__image"><img src="img/advantages/calendar.png" alt=""></div>
+                    <div class="advantages-item__image"><img src="img/advantages/calendar.png" alt="Календарь"></div>
                     <div class="advantages-item__text">Отгружаем в день заказа!
                     </div>
                 </div>
             </div>
             <div class="col-xl-3">
                 <div class="advantages-item d-flex flex-column align-items-center">
-                    <div class="advantages-item__image"><img src="img/advantages/map.png" alt=""></div>
+                    <div class="advantages-item__image"><img src="img/advantages/map.png" alt="Карта"></div>
                     <div class="advantages-item__text">Доставим в любое место!
                     </div>
                 </div>
@@ -158,9 +160,9 @@
                 <form action="" class="detail-form">
                     <div class="form-group d-flex justify-content-between">
                         <label for="code"></label>
-                        <input type="email" id="code" placeholder="ВВЕДИТЕ АРТИКУЛ ДЕТАЛИ">
+                        <input type="text" id="code" placeholder="ВВЕДИТЕ АРТИКУЛ ДЕТАЛИ">
                         <div class="form-group__block">
-                            <img src="img/price/price-form__phone.png" alt="phone">
+                            <img src="img/price/price-form__phone.png" alt="Телефон">
                             <label for="phone"></label>
                             <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
                         </div>
@@ -175,6 +177,39 @@
                     <h6 class="detail-phone__head">Мы перезвоним вам в течение 3 минут и назовем цену детали!</h6>
                     <h6>Или Вы можете перезвонить нам сами:</h6>
                     <h1 class="detail-phone__number"> +7 (818) 247-47-25</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="warranty">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 class="section__title">Мы гарантируем сохранность деталей<br>во время перевозки! </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="warranty-item">
+                    <div class="warranty-item__image"><img src="img/warranty/document.png" alt="Документ"></div>
+                    <div class="warranty-item__text">Гарантия на целостность поставки<br>прописана в договоре</div>
+                    <div class="warranty-item__link"><a href="">ПОДРОБНЕЕ</a></div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="warranty-item">
+                    <div class="warranty-item__image"><img src="img/warranty/packing.png" alt="Упаковка"></div>
+                    <div class="warranty-item__text">Каждая запчасть доставляется с завода<br>в жесткой упаковке</div>
+                    <div class="warranty-item__link"><a href="">ПОДРОБНЕЕ</a></div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="warranty-item">
+                    <div class="warranty-item__image"><img src="img/warranty/quality.png" alt="Контроль качества"></div>
+                    <div class="warranty-item__text">Дополнительный контроль качества<br>нашими специалистами</div>
+                    <div class="warranty-item__link"><a href="">ПОДРОБНЕЕ</a></div>
                 </div>
             </div>
         </div>

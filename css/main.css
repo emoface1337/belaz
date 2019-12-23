@@ -188,6 +188,26 @@ h6 {
   .detail-phone__number {
     font-family: 'Proxima Nova Extrabold', sans-serif; }
 
+.warranty {
+  padding: 100px 0; }
+  .warranty .section__title {
+    margin-bottom: 100px; }
+
+.warranty-item {
+  font-size: 18px;
+  text-align: center; }
+  .warranty-item__image {
+    margin-bottom: 40px; }
+  .warranty-item__text {
+    margin-bottom: 40px; }
+  .warranty-item__link {
+    font-family: 'Proxima Nova Bold', sans-serif; }
+    .warranty-item__link a {
+      text-decoration: underline;
+      color: #000; }
+      .warranty-item__link a:hover {
+        color: #f7b516; }
+
 body {
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif; }
