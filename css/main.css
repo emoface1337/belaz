@@ -58,8 +58,8 @@
       border-radius: 0;
       padding: 15px 25px;
       font-family: 'Proxima Nova Bold', sans-serif; }
-    .header-contact__button button:hover {
-      color: #f7b516; }
+      .header-contact__button button:hover {
+        color: #f7b516; }
 
 .hero {
   background: url("../../img/hero/hero.png") no-repeat center/cover; }
@@ -109,7 +109,15 @@
     background-color: #f2f2f2;
     color: #818181;
     border: none; }
-    .form-group input:first-child {
+  .form-group__block {
+    position: relative; }
+    .form-group__block img {
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      right: 30px;
+      top: 40%; }
+    .form-group__block:first-child {
       margin-right: 20px; }
   .form-group__image {
     margin: 0 20px; }
@@ -126,6 +134,29 @@
     background-color: #1669b3;
     color: #fff;
     border: none; }
+    .form-group__button:hover {
+      color: #f7b516; }
+
+.advantages {
+  padding: 100px 0;
+  background-color: #08243e;
+  color: #fff; }
+  .advantages__title {
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px; }
+  .advantages__description {
+    font-size: 20px;
+    margin-bottom: 100px; }
+
+.advantages-item__image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px; }
+
+.advantages-item__text {
+  text-align: center;
+  font-size: 18px; }
 
 body {
   font-size: 14px;

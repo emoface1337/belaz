@@ -7,7 +7,7 @@
     +ProximaNovaBlack
     font-size: 30px
     margin-bottom: 60px
-    //margin-right: 20px
+  //margin-right: 20px
 
   &-form
     text-align: end
@@ -23,6 +23,16 @@
     background-color: $inputBgColor
     color: $inputTextColor
     border: none
+
+  &__block
+    position: relative
+
+    & img
+      width: 20px
+      height: 18px
+      position: absolute
+      right: 30px
+      top: 40%
 
     &:first-child
       margin-right: 20px
@@ -45,3 +55,4 @@
     background-color: $btnBlueColor
     color: #fff
     border: none
+    +buttonHover($orangeColor)
