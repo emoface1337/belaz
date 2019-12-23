@@ -4,7 +4,7 @@ const autoprefixer = require("gulp-autoprefixer")
 const gulp = require("gulp")
 const rename = require("gulp-rename")
 const sass = require('gulp-sass')
-const uglify = require('gulp-uglify')
+// const uglify = require('gulp-uglify')
 const browserSync = require('browser-sync')
 const cssnano = require('cssnano')
 const postcss = require('gulp-postcss')
@@ -30,7 +30,7 @@ const css = () => {
 const scripts = () => {
     return gulp
         .src(paths.js)
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(browserSync.stream())
 }
 
