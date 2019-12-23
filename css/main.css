@@ -62,7 +62,7 @@
       color: #f7b516; }
 
 .hero {
-  background: url("../../img/hero.png") no-repeat center/cover; }
+  background: url("../../img/hero/hero.png") no-repeat center/cover; }
 
 .hero-block {
   background-color: #f7b516;
@@ -88,5 +88,45 @@
   font-family: 'Proxima Nova Regular', sans-serif;
   font-size: 18px; }
 
+.price {
+  background: url("../../img/price/price-truck.png") no-repeat left/cover;
+  padding: 100px 0; }
+  .price__title {
+    text-align: end;
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-size: 30px;
+    margin-bottom: 60px; }
+  .price-form {
+    text-align: end; }
+
+.form-group {
+  margin-bottom: 30px; }
+  .form-group input {
+    font-size: 13px;
+    padding: 30px 30px;
+    width: 340px;
+    height: 70px;
+    background-color: #f2f2f2;
+    color: #818181;
+    border: none; }
+    .form-group input:first-child {
+      margin-right: 20px; }
+  .form-group__image {
+    margin: 0 20px; }
+  .form-group p {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 14px;
+    margin: 0; }
+  .form-group__button {
+    width: 340px;
+    height: 70px;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 17px;
+    border-radius: 0;
+    background-color: #1669b3;
+    color: #fff;
+    border: none; }
+
 body {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'Proxima Nova Regular', sans-serif; }
