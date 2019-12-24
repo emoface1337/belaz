@@ -262,6 +262,18 @@ h6 {
     background: #0b3554;
     opacity: .8; }
 
+.work {
+  background-color: #ffffff;
+  padding: 100px 0; }
+
+.work-item {
+  text-align: center;
+  font-size: 18px; }
+  .work-item__image {
+    margin-bottom: 50px;
+    width: 88px;
+    height: 88px; }
+
 body {
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif; }
