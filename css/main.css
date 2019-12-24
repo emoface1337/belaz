@@ -307,6 +307,20 @@ h6 {
       font-family: 'Proxima Nova Extrabold', sans-serif;
       margin-bottom: 60px; }
 
+.address {
+  padding: 100px 0;
+  background: url("../../img/address/address-bg.png") no-repeat center/cover; }
+  .address .section__title {
+    margin-bottom: 100px; }
+
+.address-block {
+  text-align: center; }
+  .address-block__text {
+    font-size: 18px; }
+  .address-block__phone {
+    font-family: 'Proxima Nova Extrabold', sans-serif;
+    font-size: 24px; }
+
 body {
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif; }
