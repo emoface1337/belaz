@@ -274,6 +274,24 @@ h6 {
     width: 88px;
     height: 88px; }
 
+.crew {
+  background-color: #fff;
+  padding: 100px 0; }
+  .crew .section__title {
+    margin-bottom: 100px; }
+
+.crew-item__icon {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  border: 5px solid #f7b516;
+  margin-bottom: 40px; }
+
+.crew-item__text {
+  text-align: center;
+  font-size: 18px; }
+
 body {
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif; }
