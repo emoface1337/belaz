@@ -41,7 +41,7 @@
   font-style: normal; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 30px; }
 
 h6 {
   font-size: 14px; }
@@ -49,7 +49,6 @@ h6 {
 .section__title {
   text-align: center;
   font-family: 'Proxima Nova Black', sans-serif;
-  font-size: 36px;
   margin-bottom: 30px; }
 
 .section__description {
@@ -291,6 +290,22 @@ h6 {
 .crew-item__text {
   text-align: center;
   font-size: 18px; }
+
+.consultation {
+  padding: 100px 0;
+  color: #fff;
+  background: url("../../img/consultation/consultation-bg.png") no-repeat center/cover; }
+  .consultation .section__title {
+    margin-bottom: 60px; }
+  .consultation .form-group__button {
+    background-color: #f7b516; }
+    .consultation .form-group__button:hover {
+      color: #1669b3; }
+  .consultation-phone {
+    text-align: center; }
+    .consultation-phone__number {
+      font-family: 'Proxima Nova Extrabold', sans-serif;
+      margin-bottom: 60px; }
 
 body {
   font-size: 14px;
