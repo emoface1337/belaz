@@ -1,31 +1,20 @@
-function init(){
-
-    var myMap;
-
-    myMap = new ymaps.Map("map", {
-        center: [55.710124, 37.654601],
-        zoom: 16,
-        controls: []
-    });
-
-    myMap.geoObjects.add(new ymaps.Placemark([55.710124, 37.654601], {
-        // balloonContent: 'цвет <strong>голубой</strong>',
-        iconCaption: 'ул Ленинская Слобода, 26'
-    }, {
-        preset: 'islands#blueCircleDotIconWithCaption',
-        iconCaptionMaxWidth: '100%'
-    }));
-
-    myMap.behaviors.disable('scrollZoom');
-    myMap.behaviors.disable('multiTouch');
-
-    myMap.events.once('click', function () {
-        myMap.behaviors
-            .enable('scrollZoom')
-            .enable('multiTouch');
-    });
-
-
-
-}
 ymaps.ready(init);
+function init(){
+    // Создание карты.
+    var map = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [64.54453794023053,40.515659992065345],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 17,
+        controls: [],
+        behaviors: ['drag']
+    });
+    var placemark = new ymaps.Placemark([64.54454255732554,40.51540249999992], {
+        iconCaption: 'Проспект Троицкий, 65'
+    });
+    map.geoObjects.add(placemark)
+}
