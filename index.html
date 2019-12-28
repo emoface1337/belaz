@@ -6,8 +6,11 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=9383ff8b-cf3c-45fb-8556-8bbbc83c59ac&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9383ff8b-cf3c-45fb-8556-8bbbc83c59ac&lang=ru_RU"
+            type="text/javascript"></script>
     <script src="js/main.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Eddies-Car</title>
 </head>
@@ -75,33 +78,33 @@
 <section class="price">
     <div class="container">
         <div class="row">
-            <div class="col-xl-8 offset-xl-4">
-                <div class="price__title">Получите прайс прямо сейчас<br> на электронную почту!</div>
-                <form action="" class="price-form">
-                    <div class="form-group d-flex justify-content-end">
-                        <div class="form-group__block">
-                            <img src="img/price/price-form__envelope.png" alt="Почта">
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
-                        </div>
-                        <div class="form-group__block">
-                            <img src="img/price/price-form__phone.png" alt="Телефон">
-                            <label for="phone"></label>
-                            <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
-                        </div>
-                    </div>
-                    <div class="form-group d-flex justify-content-end align-items-center">
-                        <p>Прайс придет к Вам на почту<br>
-                            в течение 5 минут!
-                        </p>
-                        <div class="form-group__image">
-                            <img src="img/price/price-form__clock.png" alt="">
-                        </div>
-                        <button type="submit" class="form-group__button">ПОЛУЧИТЬ ПРАЙС</button>
-                    </div>
-                </form>
+            <div class="col-xl-12 text-center text-xl-right">
+                <h1 class="price__title">Получите прайс прямо сейчас<br> на электронную почту!</h1>
             </div>
         </div>
+        <form>
+            <div class="form-row justify-content-center justify-content-xl-end">
+                <div class="form-group text-center text-xl-right col-12 col-xl-4 ">
+                    <span class="fa fa-envelope"></span>
+                    <input type="email" id="email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
+                </div>
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <span class="fa fa-phone"></span>
+                    <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
+                </div>
+            </div>
+            <div class="form-row justify-content-center justify-content-xl-end">
+                <div class="form-group d-flex align-items-center justify-content-center justify-content-xl-end text-center text-xl-right col-12 col-xl-4">
+                    <h6>Прайс придет к Вам на почту<br>
+                        в течение 5 минут!
+                    </h6>
+                    <img src="img/price/price-form__clock.png" alt="">
+                </div>
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <button type="submit" class="form-group__button">ПОЛУЧИТЬ ПРАЙС</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
@@ -158,22 +161,20 @@
                 </h5>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12">
-                <form action="" class="detail-form">
-                    <div class="form-group d-flex justify-content-between">
-                        <label for="code"></label>
-                        <input type="text" id="code" placeholder="ВВЕДИТЕ АРТИКУЛ ДЕТАЛИ">
-                        <div class="form-group__block">
-                            <img src="img/price/price-form__phone.png" alt="Телефон">
-                            <label for="detail-phone"></label>
-                            <input type="text" id="detail-phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
-                        </div>
-                        <button type="submit" class="form-group__button">УЗНАТЬ ЦЕНУ</button>
-                    </div>
-                </form>
+        <form>
+            <div class="form-row justify-content-center justify-content-xl-end">
+                <div class="form-group text-center text-xl-right col-12 col-xl-4 ">
+                    <input type="text" id="code" placeholder="ВВЕДИТЕ АРТИКУЛ ДЕТАЛИ">
+                </div>
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <span class="fa fa-phone"></span>
+                    <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
+                </div>
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <button type="submit" class="form-group__button">УЗНАТЬ ЦЕНУ</button>
+                </div>
             </div>
-        </div>
+        </form>
         <div class="row">
             <div class="col-xl-12">
                 <div class="detail-phone">
@@ -411,20 +412,17 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12">
-                <form action="" class="consultation-form">
-                    <div class="form-group d-flex justify-content-center">
-                        <div class="form-group__block">
-                            <img src="img/price/price-form__phone.png" alt="Телефон">
-                            <label for="consultation-phone"></label>
-                            <input type="text" id="consultation-phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
-                        </div>
-                        <button type="submit" class="form-group__button">УЗНАТЬ ЦЕНУ</button>
-                    </div>
-                </form>
+        <form>
+            <div class="form-row justify-content-center">
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <span class="fa fa-phone"></span>
+                    <input type="text" id="phone" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН">
+                </div>
+                <div class="form-group text-center text-xl-right col-12 col-xl-4">
+                    <button type="submit" class="form-group__button">ПЕРЕЗВОНИТЬ СЕЙЧАС</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 
