@@ -1,5 +1,4 @@
 .consultation
-  padding: 100px 0
   color: #fff
   background: url("../../img/consultation/consultation-bg.png") no-repeat center / cover
 
@@ -10,7 +9,6 @@
     & .form-group
       color: $inputTextColor
       max-width: 370px
-      margin-bottom: 30px
       padding-right: 12px
       padding-left: 12px
 
@@ -39,9 +37,18 @@
         background-color: $btnBlueColor
         +buttonHover($orangeColor)
 
+    & .form-group:first-child
+      margin-bottom: 30px
+
   &-phone
     text-align: center
 
     &__number
       +ProximaNovaExtrabold
       margin-bottom: 60px
+
+
+@include media-breakpoint-down(xs)
+  .consultation
+    & .section__title
+      margin-bottom: 30px

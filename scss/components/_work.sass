@@ -1,12 +1,25 @@
 .work
   background-color: #ffffff
-  padding: 100px 0
+
+  & .section__title
+    margin-bottom: 30px
 
 .work-item
   text-align: center
   font-size: 18px
 
   &__image
-    margin-bottom: 50px
+    margin-bottom: 40px
     width: 88px
     height: 88px
+
+@include media-breakpoint-down(xs)
+  .work
+    & .section__title
+      margin-bottom: 15px
+  .work-item
+    margin-bottom: 30px
+    font-size: 16px
+
+    &__image
+      margin: 0 0 5px 0

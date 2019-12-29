@@ -1,6 +1,5 @@
 .crew
   background-color: #fff
-  padding: 100px 0
 
   & .section__title
     margin-bottom: 100px
@@ -17,3 +16,20 @@
   &__text
     text-align: center
     font-size: 18px
+
+@include media-breakpoint-down(xs)
+  .crew
+    & .section__title
+      margin-bottom: 50px
+
+  .crew-item
+    margin-bottom: 20px
+
+    &__icon
+      width: 130px
+      height: 130px
+      margin-bottom: 10px
+      border-width: 2px
+
+    &__text
+      font-size: 16px

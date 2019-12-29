@@ -1,7 +1,9 @@
 .faq
   background-color: #0b3554
   color: #fff
-  padding: 100px 0
+
+  & .section__title
+    margin-bottom: 30px
 
 .faq-list
   +ProximaNovaBold
@@ -19,6 +21,7 @@
 
   &__reload
     cursor: pointer
+    +ProximaNovaRegular
     & img
       width: 18px
       height: 20px
@@ -34,3 +37,12 @@
     bottom: 0
     background: #0b3554
     opacity: .8
+
+@include media-breakpoint-down(xs)
+  .faq
+    & .section__title
+      margin-bottom: 15px
+  .faq-list
+    margin-bottom: 50px
+    & li
+      margin-bottom: 35px

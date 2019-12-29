@@ -1,6 +1,5 @@
 .price
   background: url("../../img/price/price-truck.png") no-repeat left / cover
-  padding: 100px 0
 
   &__title
     +ProximaNovaBlack
@@ -49,4 +48,8 @@
         background-color: $btnBlueColor
         +buttonHover($orangeColor)
 
+@include media-breakpoint-down(xs)
+  .price
+    & .section__title
+      margin-bottom: 30px
 

@@ -1,10 +1,6 @@
 .bonus
   color: #ffffff
-  padding: 100px 0
   background-color: $bgBlue
-
-  & .section__title
-    margin-bottom: 100px
 
 .bonus-item
   text-align: center
@@ -22,3 +18,13 @@
 
   &__text
     font-size: 18px
+
+@include media-breakpoint-down(xs)
+  .bonus-item
+    margin-bottom: 30px
+
+    &__icon
+      margin: 0 0 5px 0
+
+    &__text
+      font-size: 16px

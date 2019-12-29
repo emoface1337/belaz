@@ -1,14 +1,27 @@
 .advantages
-  padding: 100px 0
   background-color: $bgBlue
   color: #fff
+
+  & .section__title
+    margin-bottom: 30px
 
 .advantages-item
   &__image
     width: 100px
     height: 100px
-    margin-bottom: 50px
+    margin-bottom: 40px
 
   &__text
     text-align: center
     font-size: 18px
+
+
+@include media-breakpoint-down(xs)
+  .advantages-item
+    margin-bottom: 30px
+
+    &__image
+      margin: 0 0 5px 0
+
+    &__text
+      font-size: 16px
