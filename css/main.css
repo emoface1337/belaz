@@ -7763,9 +7763,7 @@ section {
 
 @media (max-width: 575.98px) {
   .header-worktime {
-    margin: 10px 0; }
-  .header-contact__phone {
-    margin-bottom: 10px; } }
+    margin: 10px 0; } }
 
 .hero {
   padding: 0; }
@@ -7803,7 +7801,7 @@ section {
       margin-bottom: 25px; }
     .hero-block__description {
       font-size: 22px;
-      margin-bottom: 50px; }
+      margin-bottom: 25px; }
   .block-list__item {
     margin-bottom: 20px; }
   .list__text {
@@ -7871,8 +7869,10 @@ section {
   font-size: 18px; }
 
 @media (max-width: 575.98px) {
+  .advantages .section__description {
+    margin-bottom: 25px; }
   .advantages-item {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
     .advantages-item__image {
       margin: 0 0 5px 0; }
     .advantages-item__text {
