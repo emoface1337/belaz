@@ -7768,7 +7768,6 @@ section {
     margin-bottom: 10px; } }
 
 .hero {
-  background: url("../../img/hero/hero.png") no-repeat center/cover;
   padding: 0; }
 
 .hero-block {
@@ -8056,8 +8055,7 @@ section {
       font-size: 16px; } }
 
 .consultation {
-  color: #fff;
-  background: url("../../img/consultation/consultation-bg.png") no-repeat center/cover; }
+  color: #fff; }
   .consultation .section__title {
     margin-bottom: 60px; }
   .consultation .form-row .form-group {
