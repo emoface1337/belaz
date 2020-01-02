@@ -7730,7 +7730,7 @@ h6 {
 section {
   padding: 100px 0; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   h1 {
     font-size: 24px; }
   section {
@@ -7761,10 +7761,6 @@ section {
       .header-contact__button button:hover {
         color: #f7b516; }
 
-@media (max-width: 575.98px) {
-  .header-worktime {
-    margin: 10px 0; } }
-
 .hero {
   padding: 0; }
 
@@ -7793,7 +7789,7 @@ section {
   font-size: 18px;
   width: 100%; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
   .hero-block {
     padding: 25px 25px; }
     .hero-block__title {
@@ -7918,6 +7914,10 @@ section {
   .detail-phone__number {
     font-family: 'Proxima Nova Extrabold', sans-serif; }
 
+@media (max-width: 991.98px) {
+  .detail .section__description {
+    margin-bottom: 30px; } }
+
 .warranty-item {
   font-size: 18px;
   text-align: center; }
@@ -7932,6 +7932,14 @@ section {
       color: #000; }
       .warranty-item__link a:hover {
         color: #f7b516; }
+
+@media (max-width: 767.98px) {
+  .warranty-item {
+    margin-bottom: 40px; }
+    .warranty-item__image {
+      margin-bottom: 20px; }
+    .warranty-item__text {
+      margin-bottom: 20px; } }
 
 .bonus {
   color: #ffffff;
@@ -7950,15 +7958,15 @@ section {
     border: 2px solid white;
     margin-bottom: 40px; }
   .bonus-item__text {
-    font-size: 18px; }
+    font-size: 18px;
+    width: 250px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .bonus-item {
-    margin-bottom: 30px; }
+    margin-bottom: 20px;
+    font-size: 16px; }
     .bonus-item__icon {
-      margin: 0 0 5px 0; }
-    .bonus-item__text {
-      font-size: 16px; } }
+      margin-bottom: 10px; } }
 
 .faq {
   background-color: #0b3554;
@@ -8015,14 +8023,14 @@ section {
     width: 88px;
     height: 88px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .work .section__title {
     margin-bottom: 15px; }
   .work-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 16px; }
     .work-item__image {
-      margin: 0 0 5px 0; } }
+      margin: 0 0 10px 0; } }
 
 .crew {
   background-color: #fff; }
@@ -8041,7 +8049,7 @@ section {
   text-align: center;
   font-size: 18px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .crew .section__title {
     margin-bottom: 50px; }
   .crew-item {
@@ -8094,7 +8102,7 @@ section {
       font-family: 'Proxima Nova Extrabold', sans-serif;
       margin-bottom: 60px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .consultation .section__title {
     margin-bottom: 30px; } }
 
