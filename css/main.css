@@ -7961,12 +7961,13 @@ section {
     font-size: 18px;
     width: 250px; }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .bonus-item {
-    margin-bottom: 20px;
-    font-size: 16px; }
+    margin-bottom: 20px; }
     .bonus-item__icon {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+    .bonus-item__text {
+      font-size: 16px; } }
 
 .faq {
   background-color: #0b3554;
@@ -8129,8 +8130,9 @@ section {
     font-size: 18px;
     font-family: 'Proxima Nova Black', sans-serif; }
 
-.footer-logo {
-  margin-bottom: 15px; }
+@media (max-width: 575.98px) {
+  .footer-logo {
+    margin-bottom: 15px; } }
 
 body {
   font-size: 14px;
