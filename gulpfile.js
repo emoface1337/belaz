@@ -18,7 +18,10 @@ const paths = {
 
 const imageMinify = () => (
     gulp.src('img/**/*')
-        .pipe(imagemin())
+        .pipe(imagemin([
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5})
+        ]))
         .pipe(gulp.dest('img/min'))
 );
 
