@@ -8,12 +8,19 @@ const sass = require('gulp-sass')
 const browserSync = require('browser-sync')
 const cssnano = require('cssnano')
 const postcss = require('gulp-postcss')
+const imagemin = require('gulp-imagemin');
 
 const paths = {
     html: ['index.html'],
     sass: ['./scss/**/*.sass', './scss/**/*.scss'],
     js: ['./js/**/*.js']
 }
+
+const imageMinify = () => (
+    gulp.src('img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img/min'))
+);
 
 const css = () => {
     return gulp
@@ -48,6 +55,7 @@ const watch = () => {
     gulp.watch("./*.html").on('change', browserSync.reload)
 }
 
+gulp.task('imageMinify', imageMinify)
 gulp.task('css', css)
 gulp.task('scripts', scripts)
 gulp.task('watch', watch)
