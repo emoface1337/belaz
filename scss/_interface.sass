@@ -4,6 +4,20 @@ h1
 h6
   font-size: 14px
 
+.fa
+  display: inline-block
+  font: normal normal normal 14px/1 FontAwesome
+  font-size: inherit
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.fa-envelope:before
+  content: "\f0e0"
+
+.fa-phone:before
+  content: "\f095"
+
 @mixin buttonHover($color)
   &:hover
     color: $color
@@ -32,5 +46,6 @@ section
   .section
     &__title
       margin-bottom: 50px
+
     &__description
       margin-bottom: 50px
