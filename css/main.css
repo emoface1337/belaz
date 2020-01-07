@@ -8005,24 +8005,18 @@ section {
 
 .faq-list {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 16px;
-  text-decoration: underline; }
+  font-size: 16px; }
   .faq-list ol {
     padding-left: 20px; }
   .faq-list li {
     padding-left: 30px;
     margin-bottom: 55px;
-    cursor: pointer; }
-  .faq-list__reload {
     cursor: pointer;
-    font-family: 'Proxima Nova Regular', sans-serif; }
-    .faq-list__reload img {
-      width: 18px;
-      height: 20px;
-      margin-right: 20px; }
+    text-decoration: underline; }
 
 .faq-photo {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .faq-photo__text {
     padding: 12px 30px 10px 20px;
     position: absolute;
@@ -8030,6 +8024,37 @@ section {
     bottom: 0;
     background: #0b3554;
     opacity: .8; }
+
+.toolTip-block {
+  position: relative; }
+
+.toolTip-block:hover {
+  color: #579eff;
+  text-decoration: none; }
+  .toolTip-block:hover .toolTip {
+    visibility: visible;
+    opacity: 1; }
+
+.toolTip {
+  position: absolute;
+  visibility: hidden;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 14px;
+  padding: 15px 15px;
+  cursor: default;
+  top: 150%;
+  text-align: left;
+  z-index: 1; }
+  .toolTip::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent; }
 
 @media (max-width: 575.98px) {
   .faq .section__title {
@@ -8161,6 +8186,34 @@ section {
 @media (max-width: 575.98px) {
   .footer-logo {
     margin-bottom: 15px; } }
+
+.sldr {
+  background-color: #0b3554;
+  color: #fff; }
+  .sldr .section__title {
+    margin-bottom: 30px; }
+
+.threeItemsSlider img {
+  width: 350px;
+  margin: auto; }
+
+.threeItemsSlider .slick-arrow {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 30px;
+  background: transparent url("../../img/min/slider/slider-arrow.png") no-repeat center/cover; }
+
+.threeItemsSlider .slick-prev {
+  left: 30px; }
+
+.threeItemsSlider .slick-next {
+  right: 30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 body {
   font-size: 14px;

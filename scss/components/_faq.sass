@@ -8,8 +8,6 @@
 .faq-list
   +ProximaNovaBold
   font-size: 16px
-  text-decoration: underline
-  //cursor: pointer
 
   & ol
     padding-left: 20px
@@ -18,17 +16,11 @@
     padding-left: 30px
     margin-bottom: 55px
     cursor: pointer
-
-  &__reload
-    cursor: pointer
-    +ProximaNovaRegular
-    & img
-      width: 18px
-      height: 20px
-      margin-right: 20px
+    text-decoration: underline
 
 .faq-photo
   position: relative
+  text-align: center
 
   &__text
     padding: 12px 30px 10px 20px
@@ -38,11 +30,45 @@
     background: #0b3554
     opacity: .8
 
+.toolTip-block
+  position: relative
+
+.toolTip-block:hover
+  color: #579eff
+  text-decoration: none
+
+  & .toolTip
+    visibility: visible
+    opacity: 1
+
+.toolTip
+  position: absolute
+  visibility: hidden
+  background-color: #fff
+  color: #000
+  +ProximaNovaRegular
+  font-size: 14px
+  padding: 15px 15px
+  cursor: default
+  top: 150%
+  text-align: left
+  z-index: 1
+
+  &::after
+    content: ""
+    position: absolute
+    top: -20px
+    left: 10px
+    border-width: 10px
+    border-style: solid
+    border-color: transparent transparent #fff transparent
+
 @include media-breakpoint-down(xs)
   .faq
     & .section__title
       margin-bottom: 15px
   .faq-list
     margin-bottom: 50px
+
     & li
       margin-bottom: 35px

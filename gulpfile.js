@@ -20,7 +20,7 @@ const imageMinify = () => (
     gulp.src('img/**/*')
         .pipe(imagemin([
             imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5})
+            imagemin.optipng({optimizationLevel: 8})
         ]))
         .pipe(gulp.dest('img/min'))
 );
