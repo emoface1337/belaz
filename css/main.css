@@ -8025,8 +8025,10 @@ section {
 .faq-photo {
   position: relative;
   text-align: center;
-  max-height: 570px;
-  height: 390px; }
+  background-origin: border-box; }
+  .faq-photo img {
+    border: none;
+    padding: 1px 1px; }
   .faq-photo__text {
     padding: 12px 30px 10px 20px;
     position: absolute;
@@ -8034,7 +8036,8 @@ section {
     bottom: 0;
     background: #0b3554;
     opacity: .8;
-    text-align: left; }
+    text-align: left;
+    z-index: 1; }
 
 .toolTip-block {
   position: relative; }

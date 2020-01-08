@@ -21,9 +21,11 @@
 .faq-photo
   position: relative
   text-align: center
-  max-height: 570px
-  height: 390px
+  background-origin: border-box
 
+  & img
+    border: none
+    padding: 1px 1px
 
   &__text
     padding: 12px 30px 10px 20px
@@ -33,6 +35,7 @@
     background: #0b3554
     opacity: .8
     text-align: left
+    z-index: 1
 
 .toolTip-block
   position: relative
@@ -71,6 +74,7 @@
   .faq
     & .section__title
       margin-bottom: 15px
+
   .faq-list
     margin-bottom: 50px
 
