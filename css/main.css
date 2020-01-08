@@ -7776,8 +7776,12 @@ section {
     text-align: center; }
     .header-worktime span:first-child {
       font-family: 'Proxima Nova Bold', sans-serif; }
-  .header-contact__phone {
-    font-family: 'Proxima Nova Black', sans-serif; }
+  .header-contact__phone a {
+    font-family: 'Proxima Nova Black', sans-serif;
+    text-decoration: none;
+    color: #fff; }
+    .header-contact__phone a:hover {
+      color: #fff; }
   .header-contact__button {
     margin-left: 15px; }
     .header-contact__button button {
@@ -7939,8 +7943,12 @@ section {
   text-align: center; }
   .detail-phone__head {
     margin-bottom: 30px; }
-  .detail-phone__number {
-    font-family: 'Proxima Nova Extrabold', sans-serif; }
+  .detail-phone__number a {
+    font-family: 'Proxima Nova Black', sans-serif;
+    text-decoration: none;
+    color: #fff; }
+    .detail-phone__number a:hover {
+      color: #fff; }
 
 @media (max-width: 991.98px) {
   .detail .section__description {
@@ -8155,6 +8163,11 @@ section {
     .consultation-phone__number {
       font-family: 'Proxima Nova Extrabold', sans-serif;
       margin-bottom: 60px; }
+      .consultation-phone__number a {
+        text-decoration: none;
+        color: #fff; }
+        .consultation-phone__number a:hover {
+          color: #fff; }
 
 @media (max-width: 991.98px) {
   .consultation .section__title {
@@ -8179,9 +8192,13 @@ section {
   color: #fff; }
   .footer-call__text {
     font-size: 13px; }
-  .footer-call__phone {
+  .footer-call__phone a {
     font-size: 18px;
-    font-family: 'Proxima Nova Black', sans-serif; }
+    font-family: 'Proxima Nova Black', sans-serif;
+    color: #fff;
+    text-decoration: none; }
+    .footer-call__phone a:hover {
+      color: #fff; }
 
 @media (max-width: 575.98px) {
   .footer-logo {

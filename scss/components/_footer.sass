@@ -7,8 +7,13 @@
   &__text
     font-size: 13px
   &__phone
-    font-size: 18px
-    +ProximaNovaBlack
+    & a
+      font-size: 18px
+      +ProximaNovaBlack
+      color: #fff
+      text-decoration: none
+      &:hover
+        color: #fff
 
 
 @include media-breakpoint-down(xs)
