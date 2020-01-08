@@ -8024,14 +8024,18 @@ section {
 
 .faq-photo {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  background: transparent url("../../img/min/faq/photo.png") no-repeat center/cover;
+  max-height: 570px;
+  height: 390px; }
   .faq-photo__text {
     padding: 12px 30px 10px 20px;
     position: absolute;
     left: 0;
     bottom: 0;
     background: #0b3554;
-    opacity: .8; }
+    opacity: .8;
+    text-align: left; }
 
 .toolTip-block {
   position: relative; }
